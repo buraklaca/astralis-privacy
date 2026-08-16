@@ -11,8 +11,9 @@ Bu belge iki dilde sunulmuştur / This document is provided in two languages.
 ### Genel Bakış
 Astralis ("uygulama"), doğum haritası ve günlük gökyüzü transitlerini
 **tamamen cihazınızda** hesaplayan, açık kaynaklı bir astroloji uygulamasıdır.
-Bir sunucu altyapımız, kullanıcı hesabı sistemimiz veya reklam/analitik
-takip SDK'mız yoktur.
+Bir sunucu altyapımız, kullanıcı hesabı sistemimiz veya analitik takip
+SDK'mız yoktur. Uygulama, geliştirmeyi finanse etmek icin reklam gösterir;
+ayrıntılar aşağıdaki "Reklamlar" bölümündedir.
 
 ### Topladığımız Veriler
 Uygulamayı kullanmak için girdiğiniz şu bilgiler **yalnızca cihazınızda**,
@@ -35,14 +36,36 @@ hiçbir kişisel veri, doğum bilgisi veya konum bilgisi herhangi bir
 sunucuya gönderilmez. Nominatim'in kendi gizlilik politikası için:
 https://osmfoundation.org/wiki/Privacy_Policy
 
-### Reklam, Analitik ve Takip
-Uygulamada reklam, kullanım analitiği, çökme raporlama SDK'sı veya
+### Reklamlar
+Uygulama, geliştirmeyi finanse etmek için **Google AdMob** reklamları
+gösterir. AdMob, reklamları sunmak ve ölçmek için **reklam kimliği
+(Advertising ID)**, IP tabanlı yaklaşık konum (ülke/bölge düzeyi) ve
+cihaz/ağ bilgisi toplayabilir. Bu, AdMob'un kendi veri işlemesidir ve
+Google'ın gizlilik politikasına tabidir:
+https://policies.google.com/privacy
+
+**Doğum verileriniz AdMob'a hiçbir zaman iletilmez.** İsim, doğum
+tarihi/saati, doğum yeri ve hesaplanan harita cihazınızda kalmaya devam
+eder; reklam SDK'sının bunlara erişimi yoktur.
+
+Avrupa Ekonomik Alanı ve Birleşik Krallık'ta uygulama ilk açılışta
+Google'ın onay (UMP) formunu gösterir. Tercihinizi sonradan Ayarlar >
+"Reklam gizlilik tercihleri" üzerinden değiştirebilirsiniz.
+
+Uygulama içinden **tek seferlik bir satın alma** ile reklamları tamamen
+kaldırabilirsiniz; bu durumda reklam SDK'sı hiç başlatılmaz ve hiçbir
+reklam verisi toplanmaz. Satın alma Google Play üzerinden işlenir; ödeme
+bilgilerinize erişimimiz yoktur.
+
+### Analitik ve Takip
+Uygulamada kullanım analitiği, çökme raporlama SDK'sı veya reklam dışında
 herhangi bir üçüncü taraf takip aracı **bulunmamaktadır**.
 
 ### Çocukların Gizliliği
 Uygulama genel kitleye yöneliktir ve bilerek 13 yaş altı çocuklardan veri
-toplamaz; zaten hiçbir veri cihaz dışına gönderilmediği için bu konuda
-ek bir risk oluşturmaz.
+toplamaz. Doğum verileri hiçbir koşulda cihaz dışına çıkmaz. Reklamlar
+Google AdMob üzerinden sunulduğu için, reklam kimliği toplanması
+Google'ın çocuklara yönelik reklam politikalarına tabidir.
 
 ### Veri Güvenliği
 Nominatim'e yapılan yer arama istekleri HTTPS/TLS ile şifrelenir. Cihaz
@@ -83,14 +106,36 @@ other personal data, birth information, or location data is sent to any
 server. See Nominatim's own privacy policy:
 https://osmfoundation.org/wiki/Privacy_Policy
 
-### Advertising, Analytics & Tracking
-The app contains **no** ads, usage analytics, crash-reporting SDKs, or
-any other third-party tracking tool.
+### Advertising
+The app shows **Google AdMob** ads to fund development. To serve and
+measure them, AdMob may collect an **advertising identifier**, coarse
+(IP-derived, country/region level) location, and device and network
+information. This is AdMob's own processing, governed by Google's privacy
+policy: https://policies.google.com/privacy
+
+**Your birth data is never passed to AdMob.** Your name, birth date/time,
+birth place and computed chart stay on your device; the ad SDK has no
+access to them.
+
+In the EEA and the UK the app presents Google's UMP consent form on first
+launch. You can change your choice later under Settings > "Ad privacy
+options".
+
+A **one-time in-app purchase** removes ads entirely; when it is owned the
+ad SDK is never initialised and no advertising data is collected. The
+purchase is processed by Google Play; we have no access to your payment
+details.
+
+### Analytics & Tracking
+The app contains no usage analytics, crash-reporting SDKs, or any
+third-party tracking tool beyond the advertising described above.
 
 ### Children's Privacy
-The app is intended for a general audience and does not knowingly
-collect data from children under 13; since no data ever leaves the
-device, it does not pose additional risk in this regard.
+The app is intended for a general audience and does not knowingly collect
+data from children under 13. Birth data never leaves the device under any
+circumstances. Because ads are served through Google AdMob, collection of
+an advertising identifier is subject to Google's policies on advertising
+to children.
 
 ### Data Security
 Place-search requests to Nominatim are encrypted via HTTPS/TLS. On-device
