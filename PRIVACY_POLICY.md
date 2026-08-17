@@ -1,6 +1,6 @@
 # Astralis - Gizlilik Politikası / Privacy Policy
 
-_Son güncelleme / Last updated: 2026-08-16_
+_Son güncelleme / Last updated: 2026-08-17_
 
 Bu belge iki dilde sunulmuştur / This document is provided in two languages.
 
@@ -38,7 +38,10 @@ https://osmfoundation.org/wiki/Privacy_Policy
 
 ### Reklamlar
 Uygulama, geliştirmeyi finanse etmek için **Google AdMob** reklamları
-gösterir. AdMob, reklamları sunmak ve ölçmek için **reklam kimliği
+gösterir. Reklamlar iki biçimde görünür: ekranın altındaki
+**afiş (banner)** reklamı ve uzun bir sayfayı kapatıp geri döndüğünüzde
+ara sıra çıkan **tam sayfa (geçiş) reklamı**. Geçiş reklamları sıklık
+sınırına tabidir ve içeriği okurken araya girmez. AdMob, reklamları sunmak ve ölçmek için **reklam kimliği
 (Advertising ID)**, IP tabanlı yaklaşık konum (ülke/bölge düzeyi) ve
 cihaz/ağ bilgisi toplayabilir. Bu, AdMob'un kendi veri işlemesidir ve
 Google'ın gizlilik politikasına tabidir:
@@ -107,7 +110,10 @@ server. See Nominatim's own privacy policy:
 https://osmfoundation.org/wiki/Privacy_Policy
 
 ### Advertising
-The app shows **Google AdMob** ads to fund development. To serve and
+The app shows **Google AdMob** ads to fund development. Ads appear in two formats: a
+**banner** at the bottom of the screen, and an occasional **full-screen
+(interstitial)** ad shown when you close a long page and return.
+Interstitials are rate-limited and never interrupt you mid-content. To serve and
 measure them, AdMob may collect an **advertising identifier**, coarse
 (IP-derived, country/region level) location, and device and network
 information. This is AdMob's own processing, governed by Google's privacy
